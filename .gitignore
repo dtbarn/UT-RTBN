@@ -3,7 +3,7 @@
 /Objects/*
 /SaveChanges/*
 /SaveOriginal/*
-/*.Dan
+#/*.Dan
 *.axf
 *.htm
 *.Inp
@@ -13,7 +13,7 @@
 *.__i
 *.crf
 *.d
-*.o
+#*.o
 *.lst
 *.lnp
 *.bak
