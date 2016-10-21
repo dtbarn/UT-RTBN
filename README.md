@@ -1,2 +1,2 @@
-# UT-TRBN
+# UT-RTBN
 UT RealTime Bluetooth Network
