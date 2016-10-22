@@ -423,7 +423,6 @@ void OS_EdgeTrigger_Restart(void){
   // (d) clear flag1   
 	P5IE |= 0x02; 		 // rearm interrupt on P5.1
 	P5IFG &= ~0x02; 	 // clear flag1
-
 }
 
 void PORT5_IRQHandler(void){

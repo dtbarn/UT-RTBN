@@ -30,7 +30,6 @@
 
 #include <stdint.h>
 
-
 // ******** OS_Init ************
 // Initialize operating system, disable interrupts
 // Initialize OS controlled I/O: periodic interrupt, bus clock as fast as possible

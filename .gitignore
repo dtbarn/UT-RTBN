@@ -26,3 +26,5 @@
 .#*
 *.uvgui.*
 *.uvopt
+*.TMP
+*.tmp

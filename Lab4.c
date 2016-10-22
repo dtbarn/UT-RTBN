@@ -460,7 +460,7 @@ void Task7(void){
 // to work on this step, you must rename all other main()
 // functions in this file.
 
-int main(void){
+int main(void){ 
 //int main_final(void){
   OS_Init();
   Profile_Init();  // initialize the 7 hardware profiling pins
