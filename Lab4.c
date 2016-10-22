@@ -459,7 +459,9 @@ void Task7(void){
 // Remember that you must have exactly one main() function, so
 // to work on this step, you must rename all other main()
 // functions in this file.
+
 int main(void){
+//int main_final(void){
   OS_Init();
   Profile_Init();  // initialize the 7 hardware profiling pins
   BSP_Button1_Init();
@@ -524,8 +526,10 @@ int n;             // loop counter
 // Remember that you must have exactly one main() function, so
 // to work on this step, you must rename all other main()
 // functions in this file.
+
 int32_t sAB,sCD,sEF;
 int32_t CountA,CountB,CountC,CountD,CountE,CountF,CountG,CountH;
+
 void TaskA(void){ // producer highest priority
   CountA = 0;
   while(1){
@@ -536,6 +540,7 @@ void TaskA(void){ // producer highest priority
     OS_Sleep(20);     
   }
 }
+
 void TaskB(void){ // consumer
   CountB = 0;
   while(1){
@@ -545,6 +550,7 @@ void TaskB(void){ // consumer
     Profile_Toggle1();
   }
 }
+
 void TaskC(void){ // producer
   CountC = 0;
   while(1){
@@ -555,6 +561,7 @@ void TaskC(void){ // producer
     OS_Sleep(50);     
   }
 }
+
 void TaskD(void){ // consumer
   CountD = 0;
   while(1){
@@ -564,6 +571,7 @@ void TaskD(void){ // consumer
     Profile_Toggle3();
   }
 }
+
 void TaskE(void){ // producer
   CountE = 0;
   while(1){
@@ -574,6 +582,7 @@ void TaskE(void){ // producer
     OS_Sleep(100);     
   }
 }
+
 void TaskF(void){ // consumer
   CountF = 0;
   while(1){
@@ -583,18 +592,22 @@ void TaskF(void){ // consumer
     Profile_Toggle5();
   }
 }
+
 void TaskG(void){ // dummy
   CountG = 0; // this should run a lot
   while(1){
     CountG++;
   }
 }
+
 void TaskH(void){ // dummy
   CountH = 0; // this one should never run
   while(1){
     CountH++;
   }
 }
+
+//int main(void){
 int main_step1(void){
   OS_Init();
   Profile_Init();  // initialize the 7 hardware profiling pins
@@ -627,9 +640,11 @@ int main_step1(void){
 // Remember that you must have exactly one main() function, so
 // to work on this step, you must rename all other main()
 // functions in this file.
+
 int32_t sIJ,sKL,sMN;
 int32_t sI,sK;
 int32_t CountI,CountJ,CountK,CountL,CountM,CountN,CountO,CountP;
+
 void TaskI(void){ // producer highest priority
   CountI = 0;
   while(1){
@@ -640,6 +655,7 @@ void TaskI(void){ // producer highest priority
     OS_Signal(&sIJ);  // TaskJ can proceed   
   }
 }
+
 void TaskJ(void){ // consumer
   CountJ = 0;
   while(1){
@@ -649,6 +665,7 @@ void TaskJ(void){ // consumer
     Profile_Toggle1();
   }
 }
+
 void TaskK(void){ // producer
   CountK = 0;
   while(1){
@@ -669,6 +686,7 @@ void TaskL(void){ // consumer
     Profile_Toggle3();
   }
 }
+
 void TaskM(void){ // producer
   CountM = 0;
   while(1){
@@ -679,6 +697,7 @@ void TaskM(void){ // producer
     OS_Sleep(100);     
   }
 }
+
 void TaskN(void){ // consumer
   CountN = 0;
   while(1){
@@ -688,18 +707,22 @@ void TaskN(void){ // consumer
     Profile_Toggle5();
   }
 }
+
 void TaskO(void){ // dummy
   CountO = 0; // this should run a lot
   while(1){
     CountO++;
   }
 }
+
 void TaskP(void){ // dummy
   CountP = 0; // this one should never run
   while(1){
     CountP++;
   }
 }
+
+//int main(void){
 int main_step2(void){
   OS_Init();
   Profile_Init();  // initialize the 7 hardware profiling pins
@@ -735,9 +758,11 @@ int main_step2(void){
 // Remember that you must have exactly one main() function, so
 // to work on this step, you must rename all other main()
 // functions in this file.
+
 int32_t sQR;
 int32_t sQ;
 int32_t CountQ,CountR;
+
 void TaskQ(void){ // producer
   CountQ = 0;
   while(1){
@@ -745,9 +770,10 @@ void TaskQ(void){ // producer
     CountQ++;
     TExaS_Task4();
     Profile_Toggle4();
-    OS_Signal(&sQR);  // TaskQ can proceed
+    OS_Signal(&sQR);  // TaskR can proceed
   }
 }
+
 void TaskR(void){ // consumer
   CountR = 0;
   while(1){
@@ -759,6 +785,8 @@ void TaskR(void){ // consumer
 		OS_EdgeTrigger_Restart();
   }
 }
+
+//int main(void){
 int main_step3(void){
   OS_Init();
   Profile_Init();  // initialize the 7 hardware profiling pins

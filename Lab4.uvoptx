@@ -144,7 +144,7 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>DLGTARM</Key>
-          <Name>(1010=-1,-1,-1,-1,0)(1007=-1,-1,-1,-1,0)(1008=-1,-1,-1,-1,0)(1009=-1,-1,-1,-1,0)(1012=-1,-1,-1,-1,0)</Name>
+          <Name>(1010=-1,-1,-1,-1,0)(1007=-1,-1,-1,-1,0)(1008=-1,-1,-1,-1,0)(1009=49,618,293,1165,0)(1012=571,316,1046,629,0)</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -154,7 +154,7 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>CMSIS_AGDI</Key>
-          <Name>-X"XDS110 (02.02.04.00) with CMSIS-DAP" -U00000000 -O206 -S8 -C0 -P00 -N00("ARM CoreSight SW-DP") -D00(2BA01477) -L00(0) -FO7 -FD1000000 -FCE000 -FN2 -FF0MSP432P4xx_MainFlash256kB.FLM -FS00 -FL040000 -FP0($$Device:MSP432P401R$Flash\MSP432P4xx_MainFlash256kB.FLM) -FF1MSP432P4xx_InfoFlash.FLM -FS1200000 -FL14000 -FP1($$Device:MSP432P401R$Flash\MSP432P4xx_InfoFlash.FLM)</Name>
+          <Name>-X"XDS110 (02.03.00.02) with CMSIS-DAP" -UM4321005 -O206 -S8 -C0 -P00 -N00("ARM CoreSight SW-DP") -D00(2BA01477) -L00(0) -TO18 -TC10000000 -TP20 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -FO7 -FD1000000 -FCE000 -FN2 -FF0MSP432P4xx_MainFlash256kB.FLM -FS00 -FL040000 -FP0($$Device:MSP432P401R$Flash\MSP432P4xx_MainFlash256kB.FLM) -FF1MSP432P4xx_InfoFlash.FLM -FS1200000 -FL14000 -FP1($$Device:MSP432P401R$Flash\MSP432P4xx_InfoFlash.FLM)</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -168,12 +168,34 @@
         </SetRegEntry>
       </TargetDriverDllRegistry>
       <Breakpoint/>
+      <WatchWindow1>
+        <Ww>
+          <count>0</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>RunPt</ItemText>
+        </Ww>
+        <Ww>
+          <count>1</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>BestPt</ItemText>
+        </Ww>
+        <Ww>
+          <count>2</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>LoopPt</ItemText>
+        </Ww>
+        <Ww>
+          <count>3</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>BasePriority</ItemText>
+        </Ww>
+      </WatchWindow1>
       <Tracepoint>
         <THDelay>0</THDelay>
       </Tracepoint>
       <DebugFlag>
         <trace>0</trace>
-        <periodic>0</periodic>
+        <periodic>1</periodic>
         <aLwin>1</aLwin>
         <aCover>0</aCover>
         <aSer1>0</aSer1>
